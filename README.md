@@ -6,15 +6,12 @@ Un projet de site web dédié à la sensibilisation, à la prévention et au sou
 
  programming-unit-projet1 est un projet de création d'un site web développé dans le but de contribuer à la lutte contre le cancer grâce aux technologies numériques.
 
-Ce site a pour mission de sensibiliser la population aux différents types de cancers, de promouvoir le dépistage précoce, de diffuser des informations fiables sur la prévention et d'encourager l'engagement communautaire.
+Ce site a pour mission de diffuser des informations fiables sur la prévention et d'encourager l'engagement communautaire.
 
 ##  Objectifs
 
 Le projet vise à :
 
-- Sensibiliser le grand public aux risques liés au cancer.
-- Informer sur les causes, les symptômes et les méthodes de prévention.
-- Encourager le dépistage précoce.
 - Présenter les actions de l'organisation.
 - Faciliter les campagnes de sensibilisation.
 - Permettre les dons pour soutenir les activités.
@@ -32,15 +29,9 @@ Le projet vise à :
 
 - Page d'accueil
 - À propos de l'organisation
-- Informations sur le cancer
-- Conseils de prévention
-- Campagnes de sensibilisation
-- Événements
-- Actualités
-- Galerie
+- nos actions 
 - Formulaire de contact
 - Espace de dons
-- Questions fréquentes (FAQ)
 
 ##  Technologies utilisées
 
@@ -85,12 +76,12 @@ Les suggestions et contributions sont les bienvenues afin d'améliorer le projet
 
 ## Licence
 
-Ce projet est développé dans un objectif de sensibilisation et d'intérêt général.
+Ce projet est développé dans un objectif de présenter l'organisation,ces actions et de solliciter l'apport communautaire.
 
 ##  Auteurs
-
-Ben Salem 
+Kongolo salem
 ndende gomette christ
 Jonathan ESAÏE
+M.piergy
 
 Fondateurs et développeurs du projet.
