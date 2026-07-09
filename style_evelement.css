@@ -1,0 +1,245 @@
+/* ----------------------------------------------------
+   VARIABLES & CONFIGURATION GENERALE
+------------------------------------------------------- */
+:root {
+    --primary-color: #e056fd; /* Rose ruban symbolique / Modern tech */
+    --primary-hover: #be2edd;
+    --secondary-color: #22a6b3; /* Bleu/Turquoise médical de confiance */
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f9fbfd;
+    --white: #ffffff;
+    --border-color: #eaeeec;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------
+   HERO BANNER
+------------------------------------------------------- */
+.hero-section {
+    background: linear-gradient(135deg, #f7d6f7 0%, #dff9fb 100%);
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light);
+}
+
+/* ----------------------------------------------------
+   STRUCTURE DE L'AGENDA (EVENTS)
+------------------------------------------------------- */
+.section-intro {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.section-intro p {
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Cartes d'événements */
+.event-card {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Bloc Date à gauche */
+.event-date {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Contenu de la carte */
+.event-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.event-content h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.event-meta {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.event-description {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Badges de types d'événements */
+.badge {
+    align-self: flex-start;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.badge-webinar { background-color: #e3f2fd; color: #0d47a1; }
+.badge-action { background-color: #e8f5e9; color: #1b5e20; }
+.badge-solidarity { background-color: #fce4ec; color: #c2185b; }
+
+/* Footer de la carte */
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    gap: 15px;
+}
+
+.target-audience {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+/* Boutons */
+.btn-secondary, .btn-action-card {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-secondary {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-action-card {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-action-card:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ----------------------------------------------------
+    RESPONSIVE DESIGN
+------------------------------------------------------- */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .event-card {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        min-width: auto;
+    }
+    
+    .event-date .day { font-size: 1.5rem; }
+    
+    .event-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-secondary, .btn-action-card {
+        width: 100%;
+        text-align: center;
+    }
+}
