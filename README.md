@@ -82,9 +82,14 @@ Les suggestions et contributions sont les bienvenues afin d'améliorer le projet
 Ce projet est développé dans un objectif de présenter l'organisation,ces actions et de solliciter l'apport communautaire.
 
 ##  Auteurs
-Kongolo salem
-ndende gomette christ
-Jonathan ESAÏE
-M.piergy
+•Kongolo salem
+
+•Ndende gomette christ
+
+•Jonathan ESAÏE
+
+•Japhet Piergy Bassa
+
+•Cyrille Tsimba
 
 Fondateurs et développeurs du projet.
