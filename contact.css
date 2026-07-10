@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   /* margin: 100px auto; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 /*========== GRID PRINCIPAL ==========*/
@@ -73,12 +73,12 @@ form {
   /* border: 1px solid orange; */
 }
 
-.input-group input:focus,
+/* .input-group input:focus,
 .input-group textarea:focus {
   outline: none;
   border-color: #2e7d32;
   box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
-}
+} */
 
 textarea {
   resize: vertical;
@@ -87,7 +87,7 @@ textarea {
 form button {
   margin-top: 10px;
   padding: 16px;
-  background: #2e7d32;
+  background: #f7966c;
   color: white;
   border: none;
   border-radius: 10px;
@@ -97,8 +97,7 @@ form button {
 }
 
 form button:hover {
-  background: #1b5e20;
-  transform: translateY(-2px);
+  background: #0b470f;
 }
 
 /*========== INFORMATIONS ==========*/
