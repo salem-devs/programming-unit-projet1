@@ -13,18 +13,12 @@
   --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+/* body {
   font-family: var(--font-family);
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--bg-light);
-}
+} */
 
 .container {
   width: 90%;
@@ -67,6 +61,8 @@ body {
 }
 
 .section-intro h2 {
+  color: black;
+
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -139,6 +135,7 @@ body {
 .event-content h3 {
   margin: 10px 0;
   font-size: 1.4rem;
+  color: rgb(68, 68, 68);
 }
 
 .event-meta {
