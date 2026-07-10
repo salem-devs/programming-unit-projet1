@@ -243,3 +243,12 @@ body {
         text-align: center;
     }
 }
+/* 5. FOOTER */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
