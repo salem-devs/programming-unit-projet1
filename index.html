@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lutte contre le cancer</title>
+
     <link rel="stylesheet" href="accueil.css" />
-    <title>accueil</title>
+    <link rel="stylesheet" href="actions.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="evenements.css" />
   </head>
+
   <body>
     <header class="headr">
       <ul class="menu">
@@ -20,42 +26,277 @@
       <button class="btn-don">DONATE NOW</button>
     </header>
 
-    <section class="hero">
-      <div><img src="images/image1.jpg" class="hero-img" alt="" /></div>
-      <div class="stats-grp">
-        <!----stat1 ---->
-        <div class="stats">
-          <img src="images/people-carry-box-solid-full.svg" class="stat-img" />
-          <h2>2500+</h2>
-          <h4>PERSONNES SENSIBILISÉES</h4>
+    <main>
+      <!----SECTION HERO----->
+      <section class="hero">
+        <div><img src="images/image1.jpg" class="hero-img" alt="" /></div>
+        <div class="stats-grp">
+          <!----stat1 ---->
+          <div class="stats">
+            <img
+              src="images/people-carry-box-solid-full.svg"
+              class="stat-img"
+            />
+            <h2>2500+</h2>
+            <h4>PERSONNES SENSIBILISÉES</h4>
+          </div>
+          <!----stat2 ---->
+          <div class="stats">
+            <img
+              src="images/stethoscope-solid-full.svg"
+              class="stat-img"
+              alt=""
+            />
+            <h2>850+</h2>
+            <h4>DÉPISTAGES RÉALISÉS</h4>
+          </div>
+          <!----stat3 ---->
+          <div class="stats">
+            <img
+              src="images/hand-holding-heart-solid-full.svg"
+              alt=""
+              class="stat-img"
+            />
+            <h2>120+</h2>
+            <h4>PATIENTS ACCOMPAGNÉS</h4>
+          </div>
+          <!----stat4 ---->
+          <div class="stats">
+            <img src="images/globe-solid-full.svg" alt="" class="stat-img" />
+            <h2>15+</h2>
+            <h4>ACTIONS COMMUNAUTAIRES</h4>
+          </div>
         </div>
-        <!----stat2 ---->
-        <div class="stats">
-          <img
-            src="images/stethoscope-solid-full.svg"
-            class="stat-img"
-            alt=""
-          />
-          <h2>850+</h2>
-          <h4>DÉPISTAGES RÉALISÉS</h4>
+      </section>
+      <!-- SECTION actions. -->
+      <section class="actions">
+        <h1>Nos actions</h1>
+        <p class="but">
+          Chaque jour, nous agissons pour prévenir le cancer, accompagner les
+          patients et soutenir la recherche afin de sauver davantage de vies.
+        </p>
+
+        <div class="grp-card">
+          <!-- Carte 1 -->
+          <div class="card">
+            <img src="images/action1.jpeg" />
+            <div class="card-content">
+              <p class="text-card one">
+                Nous accompagnons les patients atteints de cancer et leurs
+                proches avec un soutien médical, psychologique et social.
+              </p>
+              <button class="btn-card"><p>En savoir plus</p></button>
+            </div>
+          </div>
+          <!-- Carte 2 -->
+          <div class="card">
+            <img src="images/action2.jpeg" alt="" />
+            <div class="card-content two">
+              <p class="text-card">
+                Nous soutenons la recherche et l'innovation afin de développer
+                de meilleurs traitements contre le cancer.
+              </p>
+              <button class="btn-card"><p>Découvrir</p></button>
+            </div>
+          </div>
+          <!-- Carte 3 -->
+          <div class="card">
+            <img src="images/action3.jpeg" alt="" />
+            <div class="card-content three">
+              <p class="text-card">
+                Nous organisons des campagnes de sensibilisation pour encourager
+                le dépistage précoce et la prévention.
+              </p>
+              <button class="btn-card">Voir nos actions</button>
+            </div>
+          </div>
+          <!-- Carte 4 -->
+          <div class="card">
+            <img src="images/action4.jpeg" alt="" />
+            <div class="card-content four">
+              <p class="text-card">
+                Participez à nos événements et rejoignez nos initiatives durant
+                le mois de sensibilisation contre le cancer.
+              </p>
+              <button class="btn-card">Participer</button>
+            </div>
+          </div>
         </div>
-        <!----stat3 ---->
-        <div class="stats">
-          <img
-            src="images/hand-holding-heart-solid-full.svg"
-            alt=""
-            class="stat-img"
-          />
-          <h2>120+</h2>
-          <h4>PATIENTS ACCOMPAGNÉS</h4>
+      </section>
+
+      <!-- SECTION  Événements -->
+      <section class="hero-section">
+        <div class="container text-center">
+          <h1>Événements & Mobilisations</h1>
+          <p>
+            Rejoignez nos actions numériques et locales pour diffuser la
+            prévention, échanger avec des professionnels et soutenir la
+            recherche.
+          </p>
         </div>
-        <!----stat4 ---->
-        <div class="stats">
-          <img src="images/globe-solid-full.svg" alt="" class="stat-img" />
-          <h2>15+</h2>
-          <h4>ACTIONS COMMUNAUTAIRES</h4>
+      </section>
+
+      <!-- Section principale de l'Agenda -->
+      <section class="events-main container">
+        <div class="section-intro">
+          <h2>Agenda des événements à venir</h2>
+          <p>
+            Découvrez nos prochaines campagnes de sensibilisation, webinaires et
+            collectes solidaires ouverts au grand public, aux patients et aux
+            professionnels de santé.
+          </p>
         </div>
-      </div>
-    </section>
+
+        <div class="events-grid">
+          <!-- Événement 1 -->
+          <article class="event-card">
+            <div class="event-date">
+              <span class="day">15</span>
+              <span class="month">Oct</span>
+            </div>
+            <div class="event-content">
+              <span class="badge badge-webinar">Webinaire</span>
+              <h3>Webinaire : Prévention et Technologies</h3>
+              <p class="event-meta">18h00 - 19h30 | En ligne (Zoom)</p>
+              <p class="event-description">
+                Une session interactive animée par des professionnels de la
+                santé pour comprendre l'impact des outils numériques dans le
+                dépistage précoce.
+              </p>
+              <div class="event-footer">
+                <span class="target-audience"
+                  >Cible : Grand public, Étudiants</span
+                >
+                <a href="#" class="btn-secondary">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Événement 2 -->
+          <article class="event-card">
+            <div class="event-date">
+              <span class="day">24</span>
+              <span class="month">Oct</span>
+            </div>
+            <div class="event-content">
+              <span class="badge badge-action">Sensibilisation</span>
+              <h3>Atelier Numérique en Famille</h3>
+              <p class="event-meta">14h00 - 17h00 |Centre Communautaire</p>
+              <p class="event-description">
+                Apprenez à identifier les sources d'informations fiables sur le
+                cancer et partagez les bonnes pratiques de prévention avec vos
+                proches.
+              </p>
+              <div class="event-footer">
+                <span class="target-audience">Cible : Familles, Patients</span>
+                <a href="#" class="btn-secondary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Événement 3 -->
+          <article class="event-card">
+            <div class="event-date">
+              <span class="day">07</span>
+              <span class="month">Nov</span>
+            </div>
+            <div class="event-content">
+              <span class="badge badge-solidarity">Solidarité</span>
+              <h3>Campagne de Don : Tech Solidarité</h3>
+              <p class="event-meta">Toute la journée | Plateforme en ligne</p>
+              <p class="event-description">
+                Une journée spéciale de mobilisation pour financer le
+                développement de nos outils numériques d'accompagnement des
+                malades.
+              </p>
+              <div class="event-footer">
+                <span class="target-audience"
+                  >Cible : Donateurs, Partenaires</span
+                >
+                <a href="contact.html" class="btn-action-card">Faire un don</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-----SECTION CONTACT----->
+      <section class="contact-section" id="contact">
+        <div class="contact">
+          <!-- Contact -->
+          <div class="contact-card">
+            <h3>Contactez-nous</h3>
+
+            <p>
+              Une question ? Une suggestion ? Un partenariat ? Notre équipe est
+              à votre écoute.
+            </p>
+
+            <form>
+              <div class="input-group">
+                <label>Nom complet</label>
+                <input type="text" placeholder="Votre nom" />
+              </div>
+
+              <div class="input-group">
+                <label>Adresse e-mail</label>
+                <input type="email" placeholder="Votre e-mail" />
+              </div>
+
+              <div class="input-group">
+                <label>Téléphone</label>
+                <input type="tel" placeholder="+243 ..." />
+              </div>
+
+              <div class="input-group">
+                <label>Objet</label>
+                <input type="text" placeholder="Objet du message" />
+              </div>
+
+              <div class="input-group">
+                <label>Message</label>
+                <textarea
+                  rows="6"
+                  placeholder="Écrivez votre message..."
+                ></textarea>
+              </div>
+
+              <button type="submit">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Informations -->
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="icon">📍</div>
+
+            <h4>Adresse</h4>
+
+            <p>
+              123 Avenue de la Santé<br />
+              Kinshasa, RDC
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon">📞</div>
+
+            <h4>Téléphone</h4>
+
+            <p>+243 000 000 000</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon">✉️</div>
+
+            <h4>E-mail</h4>
+
+            <p>contact@espoir.org</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
