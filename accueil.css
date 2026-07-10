@@ -122,11 +122,16 @@ h4 {
   }
 
   .stat-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    /* background-color: aliceblue; */
+    color: white;
+  }
+  h2 {
+    font-size: 0.7rem;
   }
 
   h4 {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
 }
