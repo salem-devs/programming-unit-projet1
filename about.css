@@ -1,0 +1,100 @@
+/* styles dans la section about*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 2rem; */
+  align-items: center;
+  padding: 0.1rem; /* Ajout d'un pad, decre pour enlever l'espace autour du section */
+}
+
+/* Pour images dans section*/
+.about img {
+  width: 100%;
+  border-radius: 1px;
+  object-fit: cover;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #d6b14d;
+  text-underline-offset: 20px; /*un peu d'ecart etre la ligne du soulignement et du texte*/
+  padding-bottom: 2.5rem; /*Separation en incr (vers le haut) par rapport à p*/
+}
+
+/* Paragraphe, tous les P depuis la section de classe about */
+.about p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Bouton */
+.about .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid #d6b14d;
+  color: #d6b14d;
+  text-decoration: none;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.about .btn:hover {
+  background: #d6b14d;
+  color: white;
+}
+
+/* Pour article */
+.article-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #b9e1d9;
+}
+
+/* Pour le texte du paragraphe dans article-about*/
+.article-about p {
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+.figure-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Supprime*/
+.figure-about img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* figure figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+} */
+
+/* Media queries de base*/
+
+@media only screen and (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .article-about p {
+    padding: 0 1rem;
+  }
+}
