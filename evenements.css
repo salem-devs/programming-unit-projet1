@@ -53,170 +53,153 @@
 }
 
 /* ----------------------------------------------------
-   STRUCTURE DE L'AGENDA (EVENTS)
+   4. STRUCTURE DE L'AGENDA (EVENTS)
 ------------------------------------------------------- */
 .section-intro {
-  margin-bottom: 40px;
-  text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .section-intro h2 {
-  color: black;
-
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: var(--text-dark);
 }
 
 .section-intro p {
-  color: var(--text-light);
-  max-width: 800px;
-  margin: 0 auto;
+    color: var(--text-light);
 }
 
-.events-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  margin-bottom: 60px;
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 60px;
 }
 
-/* Cartes d'événements */
+/* Cartes d'événements améliorées */
 .event-card {
-  display: flex;
-  background-color: var(--white);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  border: 1px solid var(--border-color);
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: box-shadow 0.3s;
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Bloc Date à gauche */
-.event-date {
-  background-color: var(--secondary-color);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 100px;
-  padding: 20px;
-  text-align: center;
+/* Zone Image */
+.event-image {
+    flex: 0 0 250px; /* Largeur fixe de l'image */
+    overflow: hidden;
 }
 
-.event-date .day {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.event-date .month {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 5px;
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit la zone sans déformer */
 }
 
 /* Contenu de la carte */
 .event-content {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event-date-inline {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.95rem;
 }
 
 .event-content h3 {
-  margin: 10px 0;
-  font-size: 1.4rem;
-  color: rgb(68, 68, 68);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--text-dark);
 }
 
 .event-meta {
-  font-size: 0.9rem;
-  color: var(--secondary-color);
-  font-weight: 600;
-  margin-bottom: 12px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background-color: #f0f0f0; /* Gris très clair uni */
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .event-description {
-  color: var(--text-light);
-  margin-bottom: 20px;
-  flex-grow: 1;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 
-/* Badges de types d'événements */
+/* Badge type unifié */
 .badge {
-  align-self: flex-start;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.badge-webinar {
-  background-color: #e3f2fd;
-  color: #0d47a1;
-}
-.badge-action {
-  background-color: #e8f5e9;
-  color: #1b5e20;
-}
-.badge-solidarity {
-  background-color: #fce4ec;
-  color: #c2185b;
+    background-color: #e0e0e0; /* Gris uni */
+    color: var(--text-dark);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Footer de la carte */
 .event-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--border-color);
-  padding-top: 15px;
-  gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    gap: 15px;
 }
 
 .target-audience {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--text-light);
+    font-size: 0.8rem;
+    color: var(--text-light);
 }
 
-/* Boutons */
-.btn-secondary,
-.btn-action-card {
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: background 0.2s;
+/* Boutons unifiés */
+.btn-primary, .btn-action {
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s;
+    border: 1px solid var(--primary-color);
 }
 
-.btn-secondary {
-  border: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
+.btn-primary {
+    color: var(--primary-color);
+    background-color: var(--white);
 }
 
-.btn-secondary:hover {
-  background-color: var(--secondary-color);
-  color: var(--white);
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
-.btn-action-card {
-  background-color: var(--primary-color);
-  color: var(--white);
+.btn-action {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
-.btn-action-card:hover {
-  background-color: var(--primary-hover);
+.btn-action:hover {
+    background-color: var(--primary-hover);
 }
 
 /* ----------------------------------------------------
