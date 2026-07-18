@@ -1,3 +1,7 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 .actions {
   display: flex;
   flex-direction: column;
@@ -18,20 +22,20 @@
 .grp-card {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid rgb(226, 6, 6); */
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
 }
 .card {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 270px;
   height: 400px;
   color: black;
   border: 1px solid rgb(231, 231, 231);
-
-  /* background-color: ; */
+  border-radius: 10px 10px 0 0;
+  font-size: 0.85rem;
+  border: 1px solid rgb(177, 177, 177);
 }
 .text-card,
 .but {
@@ -41,6 +45,7 @@
   width: 100%;
   height: 130%;
   object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 .card-content {
   display: flex;
@@ -52,13 +57,16 @@
   /* border: 2px solid green; */
   text-align: center;
   height: 100%;
-  background-color: #ffc3c3;
+  /* background-color: #ffc3c3; */
+  background: linear-gradient(to bottom right, #cbc0f5, #f5c0e1);
 }
 .two {
-  background-color: #8bcfa0;
+  /* background-color: #8bcfa0; */
+  background: linear-gradient(to bottom right, #c48bcf, #ee99b8);
 }
 .three {
-  background-color: rgb(255, 187, 255);
+  /* background-color: rgb(255, 187, 255); */
+  background: linear-gradient(to bottom right, #f5cbc0, #ffc3c3);
 }
 .four {
   background-color: blanchedalmond;
@@ -67,36 +75,61 @@
 .btn-card {
   width: 180px;
   height: 30px;
-  color: white;
+  color: rgb(69, 68, 68);
+  /* color: white; */
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.3);
   /* opacity: 0.5; */
   border: none;
   border-radius: 5px;
+  box-shadow: 0px 4px;
+}
+.btn-card p {
+  color: rgb(69, 68, 68);
+}
+.btn-card:active {
+  margin-top: 4px;
+  /* margin-bottom: 6px; */
+  box-shadow: 0px 0px;
+  background-color: #394843;
+  color: #ffffff;
+}
+.btn-card:active p {
+  color: #ffffff;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  .actions {
+    margin: 20px 0;
+    padding: 0;
+  }
   .grp-card {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 0 15px;
-    overflow: hidden;
   }
   .but {
+    width: 100%;
+    margin: 0;
     color: #282828;
     padding: 0 20px;
+    text-align: center;
   }
 
   .card {
     width: 100%;
-    max-width: 350px;
     height: auto;
+    /* border: 1px solid rgb(146, 146, 146); */
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
   }
 
   .card img {
-    height: 220px;
+    object-fit: cover;
+    height: 250px;
   }
 
   .card-content {
@@ -105,7 +138,7 @@
   }
 
   .card-content p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .btn-card {
